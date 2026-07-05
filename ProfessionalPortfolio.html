@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional Portfolio</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            body {
+                background: #90e0ef;
+                color: #333333;
+                padding-bottom: 80px;
+            }
+            .topbar {
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                background: #caf0f8;
+            }
+
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .profile-picture img {
+                float: left;
+                width: 150px;
+                height: 150px;
+                margin-right: 15px;
+                object-fit: cover;
+                border-radius: 200px;
+                border: 1px solid black;
+                object-position: top;
+                filter: brightness(1.5);
+                
+            }
+
+            .profile-picture {
+                align-content: flex-end;
+            }
+
+            section {
+                padding: 50px 10%;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+                color: #03045e;
+            }
+
+            .Navigation {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                padding: 8px;
+                border-radius: 6px;
+                display: none;
+                max-width: 240px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            tr:nth-child(odd) {
+                background: #89c2d9;
+            }
+
+            tr:nth-child(even) {
+                background: #a9d6e5;
+            }
+
+            th {
+                background: #61a5c2;
+            }
+
+            td, th {
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #334155;
+            }
+
+            .Summary {
+                padding: 20px;
+                border: 6px;
+                border-radius: 12px;
+                background: #00b4d8;
+                text-align: justify;
+                
+            }
+
+            li {
+                font-weight: bold;
+            }
+
+            .Education {
+                padding: 20px;
+                border: 6px;
+                border-radius: 12px;
+                background: #00b4d8;
+                text-align: left;
+                
+            }
+
+            .TechnicalSkill {
+                border-radius: 12px;
+                padding: 20px;
+                position: relative;
+                margin-bottom: 20px;
+                overflow: hidden;
+                background: #00b4d8;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+        <div class="topbar">
+            <h1>Professional Portfolio</h1>
+
+            <a href="#Summary">Summary</a><br>
+            <a href="#Education">Education</a><br>
+            <a href="#Technical Skills">Technical Skills</a>
+        </div>
+
+        <section>
+            <h2>Contact Details</h2>
+
+            <div class="profile-picture clearfix">
+                <img src="professionalphoto.jpg" alt="Profile picture">
+
+                <label>Name: Jubel Ling</label>
+                <br><br>
+                <label>Tel: </label>
+                <a href="tel:+60178008363">+60 17-800-8363 </a>
+                <br><br>
+                <label>Email: </label>
+                <a href="mailto:jubelling08@gmail.com">jubelling08@gmail.com</a>
+                <br><br>
+                <label>Address: Tierra Crest on Jalan SS 6/3</label>
+                <br><br>
+                <label>Social: </label>
+                <a href="https://www.instagram.com/bel_sn09/" target="_blank">bel_sn09</a>
+            </div>
+        </section>
+      
+        <section>
+            <h2 id="Summary">Summary</h2>
+
+            <div class="Summary">
+                <p>A budding web developer seeking to showcase my skills at creating and designing my very own portfolio and publishing it online. Currently pursuing a diploma in Information Technology at Unitar International University. Intermediate knowledge of programming.</p>
+            </div>
+        </section>
+       
+        <section>
+            <h2 id="Education">Education</h2>
+
+            <div class="Education">
+                <ul>
+                    <li>Jan 2015 - May 2020</li>
+                    <p>Highschool Graduate at SM All Saints</p>
+                    <p>SPM certificate</p>
+
+                    <br><br>
+      
+                    <li>May 2025 - On-going</li>
+                    <p>Unitar International University</p>
+                    <p>Diploma in Information Technology</p>
+    
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 id="Technical Skills">Technical Skills</h2>
+
+            <div class="TechnicalSkill">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Language Type</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Basic</td>
+                        </tr>
+
+                        <tr>
+                            <td>Python</td>
+                            <td>Intermediate</td>
+                        </tr>
+
+                        <tr>
+                            <td>SQL</td>
+                            <td>Intermediate</td>
+                        </tr>
+
+                        <tr>
+                            <td>C++</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </body>
+</html>
+
